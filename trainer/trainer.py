@@ -36,7 +36,7 @@ class Trainer:
 
     def _train_iter(self, data, step, pbar):
         """
-        [已修改] 标准训练迭代，开启 AMP。
+
         """
         self.model.train()
         images, style_ref, content_ref, wid = data['img'].to(self.device), \
